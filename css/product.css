@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-primary: hsl(226, 96%, 68%);
+  --bg-secund: hsl(0, 0%, 99%);
+  --bg-hed: hsla(239, 67%, 47%, 0.267);
+
+  --fc-prymari: hsl(0, 0%, 0%);
+  --fc-secund: hsl(251, 93%, 22%);
+
+  --ff-texting: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+header {
+  background-color: var(--bg-primary);
+  height: 20rem;
+  width: 100%;
+}
+
+header img {
+  height: 15rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 8rem;
+  font-size: 2.3rem;
+  font-family: var(--ff-texting);
+  font-weight: 700;
+  list-style: none;
+  text-decoration: none;
+  padding: 0 5rem;
+}
+ li a {
+  text-decoration: none;
+  color: var(--bg-secund);
+ }
+
+ li a:hover {
+  background-color: rgb(9, 7, 128);
+  padding: 1rem;
+  border-radius: 1rem;
+
+ }
+
+footer {
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 15rem;
+}
+
+footer img {
+  height: 8rem;
+}
+
+footer p {
+  font-weight: 100;
+  font-style: normal;
+  height: 2rem;
+}
+
+
+  h1 {
+  font-size: 5rem;
+  font-family: var(--ff-texting);
+  text-align: center;
+  background-color: rgba(25, 23, 153, 0.911);
+  color: var(--bg-secund);
+  padding: 3rem;
+}
+
+
+.dog {
+  display: flex;
+  flex-direction: column;
+}
+
+.dog h3 {
+  font-size: 3rem;
+  font-family: var(--ff-texting);
+  padding: 1rem;
+ 
+  background-color:var(--bg-primary);
+  width: 100%;
+  text-align: center;
+  color:var(--bg-secund)
+}
+.dog img{
+  height: clamp(5rem, 8rem + 30vh, 20rem );
+  
+}
+
+.dog h3:hover {
+  scale: 1.1;
+  color: rgb(0, 0, 0);
+}
+
+#sacs {
+  display: flex;
+  gap:8rem;
+  padding: 5rem;
+  
+}
+
+
+#rac1,#rac2,#rac3,#rac4 {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+}
+
+#rac1,#rac2,#rac3,#rac4 p {
+  font-size: 2rem;
+  font-family: var(--ff-texting);
+  font-weight: 600;
+}
+
+#rac1:hover {
+  scale: 1.1;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#rac2:hover {
+  scale: 1.1;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#rac3:hover {
+  scale: 1.1;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#rac4:hover {
+  scale: 1.1;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.cat {
+  display: flex;
+  flex-direction: column;
+}
+
+.cat h3 {
+  font-size: 3rem;
+  font-family: var(--ff-texting);
+  padding: 1rem;
+  background-color:var(--bg-primary);
+  width: 100%;
+  text-align: center;
+  color:var(--bg-secund)
+}
+.cat img{
+  height: clamp(5rem, 8rem + 30vh, 20rem );
+}
+
+.cat h3:hover {
+  scale: 1.1;
+  color: rgb(0, 0, 0);
+}
+
+#sacs2 {
+  display: flex;
+  gap: 8rem;
+  padding:5rem ;
+}
+
+@media only screen and (max-width:1025px) {
+  
+#sacs {
+  display: grid;
+  grid-template-areas: "A A ";
+}
+#sacs2{
+  display: grid;
+  grid-template-areas: "A A ";
+}
+
+  .dog img{
+    height: clamp(5rem, 8rem + 20vh, 15rem );
+    
+  }
+  .cat img{
+    height: clamp(5rem, 8rem + 20vh, 15rem );
+  }
+  
+  #rac1,#rac2,#rac3,#rac4 p {
+    font-size: 1.5rem;
+
+}
+header {
+  height: 12rem;
+}
+
+header img {
+  height:  clamp(5rem, 8rem + 11vh, 11rem );
+
+}
+
+nav ul {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.dog h3 {
+  font-size: 2rem;
+}
+.cat h3 {
+  font-size: 2rem;
+}
+
+footer {
+ height: 8rem;
+}
+
+}
+
+@media only screen and (max-width:808px) {
+
+  nav ul {
+    font-size: 1.8rem;
+    gap:3rem
+  }
+
+  nav ul {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    gap:1.3rem;
+  }
+
+  header {
+    height: 12rem;
+  }
+
+  header img {
+    height:  clamp(3rem, 3rem + 8vh, 8rem );
+    margin-top:3rem;
+  
+  }
+
+}
+
+@media only screen and (max-width:570px) {
+
+  section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    gap:3rem;
+    margin-top: 2rem;
+  }
+  
+  header {
+    height: 17rem;
+  }
+
+  header img {
+    height: 8rem;
+    margin: 0; 
+    margin-top: 2rem;
+  }
+
+  main h1 {
+    height: 6rem;
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .dog h3 {
+    height: 3rem;
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+  }
+  footer img {
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width:481px) {
+ 
+  #sacs {
+    display: grid;
+    grid-template-areas: "A";
+  }
+  #sacs2{
+    display: grid;
+    grid-template-areas: "A ";
+  }
+  
+  nav ul {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    gap:2rem;
+  
+  }
+
+}
+
