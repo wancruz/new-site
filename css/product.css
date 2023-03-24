@@ -79,7 +79,7 @@ footer p {
 
 
   h1 {
-  font-size: 5rem;
+  font-size: 4.2rem;
   font-family: var(--ff-texting);
   text-align: center;
   background-color: rgba(25, 23, 153, 0.911);
@@ -94,7 +94,7 @@ footer p {
 }
 
 .dog h3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-family: var(--ff-texting);
   padding: 1rem;
  
@@ -159,7 +159,7 @@ footer p {
 }
 
 .cat h3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-family: var(--ff-texting);
   padding: 1rem;
   background-color:var(--bg-primary);
