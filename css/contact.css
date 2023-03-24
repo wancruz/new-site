@@ -130,6 +130,7 @@ select {
   border-radius: 2rem;
   width: clamp(7rem, 8rem + 50vw, 50rem);
   padding: 2rem;
+  font-size: 1.6rem;
 }
 .input-wrapper {
   display: flex;
@@ -153,25 +154,34 @@ textarea {
   padding: 2rem;
   border-radius: 2rem;
 }
-input {
-  color: #000000;
-}
-
-button{
-  height: 4rem;
-  width: 15rem;
-  background-color: rgb(67, 158, 18);
+center input {
   color: #ffffff;
-  border: solid 1px green;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
+  background: none;
+  border: none;
   font-size: 2rem;
   font-weight: bold ;
+  cursor: pointer;
+ 
 }
 
-button:hover {
+
+.button{
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 15rem;
+  background-color: rgb(6, 8, 107);
+  border: solid 1px rgb(13, 0, 128);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+ 
+}
+
+.button:hover {
   scale: 1.1;
-  background-color:rgb(46, 112, 11); 
+  background-color:rgb(243, 31, 31); 
+  border: solid 3px black;
 }
 
 fieldset {
@@ -185,6 +195,9 @@ fieldset {
   text-align: center;
   background-color: var(--bg-primary);
   margin-bottom: 1rem;
+}
+.invalid {
+  border: 3px solid red !important;
 }
 
 @media only screen and (max-width:983px) {
