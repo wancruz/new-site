@@ -40,7 +40,7 @@ section {
 nav ul {
   display: flex;
   gap: 8rem;
-  font-size: 2.3rem;
+  font-size: 3.4rem;
   font-family: var(--ff-texting);
   font-weight: 700;
   list-style: none;
@@ -75,11 +75,12 @@ main img {
 
 .center {
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
 p {
-  font-size: 2.1rem;
+  font-size: 3.4rem;
   font-family: var(--ff-texting);
   font-style: oblique;
   font-weight: 600;
@@ -116,9 +117,15 @@ h1:hover {
   height: 40rem;
 }
 
+.mission {
+  display: flex;
+  flex-direction: column;
+}
+
 #text-mission {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #text-mission img {
@@ -154,7 +161,7 @@ footer p {
   height: 2rem;
 }
 
-@media only screen and (max-width: 1218px) {
+@media only screen and (max-width: 1288px) {
   header {
     height: 30rem;
   }
@@ -191,6 +198,9 @@ footer p {
     padding: 2rem;
     margin-top: 5rem;
   }
+  p {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -213,9 +223,10 @@ footer p {
     flex-direction: column;
   }
 
-  .center p {
+ p {
     order: 2;
     height: 5rem;
+    font-size: 2rem;
   }
 
   #img-rac {

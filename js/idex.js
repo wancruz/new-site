@@ -15,8 +15,8 @@ function validateForm() {
   return isValid
 }
 
-function submitForm(){
-  if (validateForm()){
+function submitForm() {
+  if (validateForm()) {
     sendToWhatsapp()
   }
 }
